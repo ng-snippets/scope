@@ -1,4 +1,4 @@
-#####ng-app, Controllers and $scope
+####ng-app, Controllers and $scope
 
 `ng-app` is used to identify the root element of the page which belongs to angularJS . For example, if we are using angularjs only for a small paragraph, we mention the `ng-app` in that paragraph. 
 
@@ -29,16 +29,20 @@ var app = angular.module("myApp",[]);
 In our example we created a new Controller named "MainController" and assigned a `div` for the controller. 
 By doing this , the `scope` of the `controller` is confined only to that `div` .
 
-`$scope`
-
+#####$scope
 `$scope` binds the controllers and views . While creating a controller, we pass `$scope` to the controller function.
+```html
+<div ng-controller="MainController">
+...
+</div>
+```
 ```javascript
 app.controller("MainController", function ($scope ){
 ....
 });
 ```
 Whatever models and functions attached to the `$scope` will be available for the view. 
-In our example we added `num` model and `increment` function to `$scope` . These two can be accessed in the view directly. 
+In our example we added `num` model and `increment()` function to `$scope` . These two can be accessed in the view directly. 
 
 Remember the models and functions declared in the controller are accessible only to the elements inside the root elements with controller declared.
 
