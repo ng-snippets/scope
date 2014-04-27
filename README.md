@@ -1,7 +1,10 @@
-ng-app, controllers and ng-scope 
+ng-app, controllers and scope 
 
 `ng-app` is used to identify the root element of the page which belongs to angularJS . For example, if we are using angularjs only for a small paragraph, we mention the `ng-app` in that paragraph. 
-`<p ng-ap > </p>`
+
+```html
+<p ng-ap > </p>
+```
 
 Usually when the whole application is built on AngularJS, we add it to the body . 
 
