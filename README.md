@@ -31,7 +31,13 @@ By doing this , the `scope` of the `controller` is confined only to that `div` .
 
 `$scope`
 
-`$scope` binds the controllers and views . While creating a controller, we pass `$scope` to the controller function. Whatever models and functions attached to the `$scope` will be available for the view. 
+`$scope` binds the controllers and views . While creating a controller, we pass `$scope` to the controller function.
+```javascript
+app.controller("MainController", function ($scope ){
+....
+});
+```
+Whatever models and functions attached to the `$scope` will be available for the view. 
 In our example we added `num` model and `increment` function to `$scope` . These two can be accessed in the view directly. 
 
 Remember the models and functions declared in the controller are accessible only to the elements inside the root elements with controller declared.
