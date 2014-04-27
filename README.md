@@ -46,3 +46,5 @@ In our example we added `num` model and `increment()` function to `$scope` . The
 
 Remember the models and functions declared in the controller are accessible only to the elements inside the root elements with controller declared.
 
+Also observe the we used `ng-click` to bind the controller function to the click event of the button . We will learn about `ng-click` in later snippets. 
+
